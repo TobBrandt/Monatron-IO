@@ -13,7 +13,11 @@ Version:             1.0
 Synopsis:            MonadIO instances for the Monatron transformers.
 
 -- A longer description of the package.
--- Description:         
+Description:         This package defines instances of the 
+  'Control.Monad.IO.Class.MonadIO' class (see "Control.Monad.IO.Class") 
+  for all the monad transformers in "Control.Monatron.Transformer"
+  (except 'Control.Monadtron.Transformer.StepT') and for the 
+  zipper type (':>') in "Control.Monad.Zipper".
 
 -- The license under which the package is released.
 License:             BSD3
@@ -28,6 +32,8 @@ Author:              Tobias Brandt
 -- and patches.
 Maintainer:          tob.brandt@gmail.com
 
+Homepage: https://github.com/kreuzschlitzschraubenzieher/Monatron-IO
+
 -- A copyright notice.
 -- Copyright:           
 
@@ -40,7 +46,7 @@ Build-type:          Simple
 -- Extra-source-files:  
 
 -- Constraint on the version of Cabal needed to build this package.
-Cabal-version:       >=1.2
+Cabal-version:       >=1.6
 
 
 Library
